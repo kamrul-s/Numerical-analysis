@@ -1,0 +1,17 @@
+1.	In a chemical engineering process, water vapor (H2O) is heated to sufficiently high temperatures that a significant portion of the water dissociates, or splits apart, to form oxygen (O2) and hydrogen (H2):
+
+H2O←→ H2 + 1/2 O2
+
+If it is assumed that this is the only reaction involved, the mole fraction  x of H2O that dissociates can be represented by
+
+K=x/(1-x) *√(2pt/(2+x))
+
+where K is the reaction’s equilibrium constant and pt is the total pressure of the mixture. If pt= 3 atm and K = 0.05, determine the value of x that satisfies given equation.
+Write a single program which does the following:
+•	Uses graphical model to estimate the value.					[5]
+•	Uses Secant method and False Position method to estimate the value for εs=0.5%. Report the number of iterations for each  method  while achieving the expected result.						    [7.5+7.5=15]
+
+Secant Method and False Position method should be implemented as separate functions following the prototype given below:
+•	Secant method (function , 1st initial guess, 2nd initial guess, expected relative approximation error, max iteration)
+
+•	False Position method (function , lower bound of the bracket, upper bound of the bracket, expected relative approximation error, max  iteration)
