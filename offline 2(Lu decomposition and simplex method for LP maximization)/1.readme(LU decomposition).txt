@@ -1,0 +1,24 @@
+LU DECOMPOSITION
+
+
+
+The format of the input file in1.txt will be as followed:
+Line 1 will contain an integer n, denoting the number of variables and equations in the set of
+equations where 2 ≤ n ≤ 100. After that, there will be n lines each containing n double values
+separated by a space. These n lines constitute the A matrix. Then, there will be n lines each
+containing a double value. These n lines constitute the B matrix.
+All outputs (print statements for this assignment) must be in a file named out1.txt. Outputs
+printed in the console will not be considered for evaluation. The format of the output file will be
+as followed:
+First n lines should contain n double values each separated by a space. These n lines should
+constitute the L matrix.
+A blank line should be printed after that.
+Next n lines should contain n double values each separated by a space. These n lines should
+constitute the U matrix.
+A blank line should be printed after that.
+If there is no unique solution for the set of equation, print “No unique solution” (without the
+quotes) and terminate the program. Otherwise, there should be n more lines containing a
+double value in each line. These n lines constitute the Y matrix.
+A blank line should be printed after that.
+Next n lines should contain a double value in each. These n lines should constitute the X
+matrix.
