@@ -1,0 +1,15 @@
+Solve the following ODE numerically from x=0 to x=10.
+𝑑𝑦
+𝑑𝑥 = (𝑥 + 20𝑦) 𝑠𝑖𝑛(𝑥𝑦)
+Initial condition: y(0)=4
+Apply Euler method, Heun’s method (with a single corrector), Midpoint method, Ralston’s
+method, and 4th order RK method (as described in the book) to solve it. Write a single function
+for the 2nd order RK method and pass the value of a2 to the function for implementing Heun’s
+method, Midpoint method and Ralston’s method.
+Use the following step sizes: 0.01, 0.05, 0.1, 0.5
+Generate the following graphs from the (x,y) points you get.
+• For each method, plot curves for all the step sizes in one graph (total 5 graphs, 4 curves
+in each graph)
+• For each step size, plot curves for all the methods in one graph (total 4 graphs. 5 curves
+in each graph)
+Proper labeling should be done in every graph. 

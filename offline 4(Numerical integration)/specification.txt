@@ -1,0 +1,34 @@
+you will implement the following numerical integration methods:
+a.	Trapezoidal rule
+b.	Simpson’s 1/3 rule
+c.	Simpson’s 3/8 rule
+Input file specifications
+The input file will start with N, an integer, indicating how many data points are there. Next follows 2*N floating point numbers. The first floating point number indicates value of x, the second indicates f(x). x and f(x) both can be negative. A sample input file is:
+10
+0 0
+1.5 6.2
+…
+…
+11.8 20
+
+Therefore, from input, you know x’s and f(x)’s. You have to determine the following integral using numerical integration methods stated before.
+ 
+The x’s in the input file will be sorted from minimum to maximum.
+
+Output requirements
+You can write the output in file or in console. First, you should output the following:
+Trapezoidal rule: x intervals
+1/3 rule: y intervals
+3/8 rule: z intervals
+
+Here, x denotes the number of intervals that were integrated using Trapeziodal rule and so on. (You should readily see why x, y and z should sum to N-1.)
+
+Next, you should print the value of the integral.
+
+Plotting
+Your program should also generate a graph where the data points are shown. The intervals should be annotated properly to show in which of the three methods you integrated that interval. (There should be x intervals annotated with Trapezoid, y intervals with 1/3 rule and z intervals with 3/8 rule).
+
+Instructions
+There are N-1 intervals. Your program should first decide consecutive equally spaced intervals. Say you have 5 consecutive intervals that are of the same width. Next, you have to determine which interval will be integrated using which methods. In this case, you can integrate all five using Trapezoidal rule. However, that will produce a large error and you will not score high marks. You can also integrate these five intervals using two 1/3 and one trapezoid. This will surely have less error than the previous, but the most accurate would be to use one 3/8 and one 1/3 rule. You have to figure out an algorithmic way to determine which interval(s) will be integrated with which rule(s).
+
+Note that your program should pick Simpson’s rule over the Trapezoidal whenever possible, since that will result in more accurate approximation of the integral. You must use multiple application of these rules whenever necessary.
